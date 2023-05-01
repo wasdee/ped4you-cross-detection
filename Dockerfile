@@ -4,6 +4,7 @@ WORKDIR /usr/src/app
 
 COPY requirements-fastapi.txt ./
 RUN pip install -r requirements-fastapi.txt
+RUN pip install --upgrade Pillow 
 
 COPY main.py ./
 COPY models/model2.pkl ./models/
